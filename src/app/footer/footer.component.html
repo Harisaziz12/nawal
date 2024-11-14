@@ -1,0 +1,80 @@
+<footer class="footrmain " style="overflow-x: hidden;">
+  <div class="container-flluid ps-md-5 pt-5">
+    <div class="row">
+      <div class="col-12 col-md-3 px-4">
+        <ul class="footer-links">
+          <li *ngFor="let item of footerItems">
+            <a *ngIf="!item.link" href="javascript:void(0)" class="footer-title">{{ item.title }}</a>
+            <a *ngIf="item.link" [routerLink]="item.link" class="footer-item poppins-regular">{{ item.name }}</a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-12 col-md-3 footer-links px-4">
+        <p class="footer-title">Nevly money</p>
+        <ul class="footer-links">
+          <li *ngFor="let button of buttons">
+            <a href="javascript:void(0)" class="footer-item poppins-regular" (click)="openModal(button.content)">
+              {{ button.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3 px-4">
+        <ul class="footer-links">
+          <li *ngFor="let item of footerItem2">
+            <a *ngIf="!item.link" href="javascript:void(0)" class="footer-title">{{ item.title }}</a>
+            <a *ngIf="item.link" (click)="openPopup(item.name)" class="footer-item poppins-regular">{{ item.name }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3 px-4">
+        <ul class="footer-links">
+          <li *ngFor="let item of footerItem3">
+            <a href="javascript:void(0)" class="footer-title ">{{ item.title }}</a>
+            <div>
+              <img src="images/appstore.png" class="my-3" alt=""> <br>
+              <img src="images/playstore.png" alt="">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-6 ps-5"><img src="images/footerlogo.png" alt=""></div>
+    <div class="col-6 text-end pe-5">
+      <fa-icon class="icon px-3" [icon]="faTiktok"></fa-icon>
+      <fa-icon class="icon px-3" [icon]="faFacebook"></fa-icon>
+      <fa-icon class="icon px-3" [icon]="faLinkedin"></fa-icon>
+
+      <!-- your-component.component.html -->
+
+      <fa-icon class="icon px-3" [icon]="faInstagram"></fa-icon>
+
+
+
+    </div>
+    <hr style="color: white;" class="my-3">
+    <div class="text-white text-center pt-1">
+      © 2024 NEVLY Money. All rights reserved.
+    </div>
+  </div>
+  <div class="modal mt-5 fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="privacyModalLabel">{{ popupTitle }}</h5>
+          <button type="button" class="btn-close " style="font-size: 25px; color: rgb(0, 0, 0);" data-bs-dismiss="modal"
+            aria-label="Close"><!-- your-component.component.html -->
+            <fa-icon [icon]="faTimes"></fa-icon>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div [innerHTML]="popupContent"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,94 @@
+<div class="container-fluid p-0" id="nevly-services">
+  <div class="container-fluid p-0 text-center">
+    <p class="head poppins-bold">Nevly Money Services</p>
+    <p class="poppins-regular des px-3">Nevly Money was designed to allow members who are ready to start their journey
+      towards <br>improving their credit access to the tools needed to improve their credit profile as
+      well as <br>
+      address many of the root causes responsible for poor credit scores.
+    </p>
+    <ng-template #popupContainer></ng-template>
+
+    <button class="btn btnjoin my-4" (click)="openPopup()">JOIN NOW
+      <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.00341 16.0372C8.76654 16.0372 8.57068 15.9598 8.41581 15.8048C8.26094 15.65 8.18351 15.4542 8.18351 15.2173C8.18351 14.9805 8.26094 14.7846 8.41581 14.6298C8.57068 14.4748 8.76654 14.3974 9.00341 14.3974H10.3699C10.2241 11.6827 9.2676 9.37325 7.50026 7.46927C5.73292 5.56528 3.59208 4.51307 1.07771 4.31266C0.840859 4.29444 0.644985 4.20789 0.490123 4.05301C0.33526 3.89815 0.257812 3.70229 0.257812 3.46542C0.257812 3.22857 0.339802 3.0327 0.503782 2.87783C0.667762 2.72296 0.859077 2.65464 1.07771 2.67286C3.37343 2.83684 5.42773 3.6203 7.24063 5.02323C9.05351 6.42618 10.3699 8.21172 11.1898 10.3799C11.7911 8.72189 12.6975 7.20508 13.9091 5.82947C15.1207 4.45386 16.5829 3.30144 18.2955 2.37222H14.7427C14.5058 2.37222 14.31 2.29479 14.1551 2.13993C14.0002 1.98505 13.9228 1.78919 13.9228 1.55232C13.9228 1.31547 14.0002 1.11961 14.1551 0.964732C14.31 0.809869 14.5058 0.732422 14.7427 0.732422H20.2087C20.4456 0.732422 20.6414 0.809869 20.7962 0.964732C20.9512 1.11961 21.0286 1.31547 21.0286 1.55232V7.01832C21.0286 7.25518 20.9512 7.45105 20.7962 7.60591C20.6414 7.76079 20.4456 7.83822 20.2087 7.83822C19.9719 7.83822 19.7759 7.76079 19.6211 7.60591C19.4662 7.45105 19.3888 7.25518 19.3888 7.01832V3.65674C17.1842 4.8046 15.4397 6.30773 14.1551 8.16618C12.8706 10.0246 12.1555 12.1017 12.0097 14.3974H13.3762C13.6131 14.3974 13.8089 14.4748 13.9638 14.6298C14.1187 14.7846 14.1961 14.9805 14.1961 15.2173C14.1961 15.4542 14.1187 15.65 13.9638 15.8048C13.8089 15.9598 13.6131 16.0372 13.3762 16.0372H9.00341Z" fill="#1E4C53"/>
+        </svg>
+        
+    </button>
+  </div>
+
+  <div class="container my-4 position-relative">
+    <div class="row align-items-center justify-content-center">
+
+    
+
+      <div class="col-12">
+        <div class="carousel-container">
+          <div class="carousel-wrapper" [style.transform]="getTransform()">
+            <div class="carousel-card" *ngFor="let card of cards">
+              <div class="card mb-4 px-2 mx-auto" (click)="openModal(content, card)">
+                <div class="card-body text-center">
+                  <h5 class="card-title poppins-bold mb-3 text-white mt-2">{{ card.title }}</h5>
+                  <img [src]="card.imageUrl" class="card-img-top img-fluid my-3" alt="{{ card.title }}">
+                  <div class="my-2 text-end">
+                    <svg width="25" height="16" class="arrow" viewBox="0 0 25 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.8389 8.50984C24.2295 8.11931 24.2295 7.48615 23.8389 7.09563L17.475 0.731665C17.0845 0.341141 16.4513 0.341141 16.0608 0.731665C15.6702 1.12219 15.6702 1.75535 16.0608 2.14588L21.7176 7.80273L16.0608 13.4596C15.6702 13.8501 15.6702 14.4833 16.0608 14.8738C16.4513 15.2643 17.0845 15.2643 17.475 14.8738L23.8389 8.50984ZM0.851563 8.80273L23.1318 8.80273L23.1318 6.80273L0.851562 6.80273L0.851563 8.80273Z"
+                        fill="#131414" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots-container pb-5 pt-2" style="margin-top: -20px;">
+          <div *ngFor="let dot of dots; let i = index" class="dot" [class.active]="i === currentIndex" (click)="goToSlide(i)">
+          </div>
+        </div>
+
+        <!-- <button class="prev-btn" (click)="prevSlide()">❮</button>
+        <button class="next-btn" (click)="nextSlide()">❯</button> -->
+      </div>
+
+    </div>
+  </div>
+  <div class="text-center">
+    
+    <!-- <button class="btn-toggle-circle" (click)="showPrevious()" *ngIf="startIndex > 0"></button> -->
+    <!-- <button class="btn-toggle-circle" (click)="showNext()" *ngIf="startIndex + getCardCount() < cards.length"></button> -->
+  </div>
+  <div class="text-center">
+    <span *ngFor="let dot of dots; index as i" [class.active]="i === currentIndex" (click)="goToSlide(i)"></span>
+  </div>
+  <!-- New Section Below the Cards -->
+
+
+  <ng-template #content let-modal>
+    <div class="modal-content bg-black-modal text-white">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6 text-end">
+          <button type="button" class="btn-close btn-close-white pe-5 pt-3" aria-label="Close"
+            (click)="modal.dismiss('Cross click')"></button>
+        </div>
+      </div>
+      <h5 class="modal-title poppins-extrabold text-center">{{ selectedCard?.title }}</h5>
+      <div class="modal-body">
+        <p style="font-size: 15px;" class="poppins-regular">{{ selectedCard?.description }}</p>
+
+        <!-- List of Points -->
+        <ul *ngIf="selectedCard?.desc?.length" class="poppins-medium mt-3" style="color: #FBE07E; margin-left: -30px;">
+          <li *ngFor="let point of selectedCard.desc">
+            <fa-icon class="iconbg" [icon]="faCheck"></fa-icon>
+            {{ point }}
+          </li>
+        </ul>
+        <div class="text-center">
+          <img [src]="selectedCard?.imageUrl" alt="{{ selectedCard?.title }}" class="img-fluid"
+            style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</div>

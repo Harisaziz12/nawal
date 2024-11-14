@@ -1,0 +1,81 @@
+<div class="container-fluid p-0" id="plans-subscriptions">
+    <div class="container-fluid bg-white pt-5">
+      <p class="poppins-bold text-class text-center my-3">A PLAN FOR EVERYONE</p>
+      <p class="poppins-regular text-center hero-desc">
+        Our mission is simple. Recognize that we all choose to do the work when we<br> are
+     
+        ready. So we've created our subscription plans to accommodate this fact.
+      </p>
+      <div class="container">
+        <div class="pricing-table row">
+          <div
+            class="plan-card py-3 col-md-3"
+            *ngFor="let plan of plans; let i = index"
+            [ngStyle]="{
+              'background-color': i === 1 ? '#003333' : '#ffffff',
+              'color': i === 1 ? '#ffffff' : 'initial'
+            }"
+          >
+            <!-- Plan Name (Set explicitly to white if central box) -->
+            <p
+              class="plan-name poppins-bold planname text-center"
+              [style.color]="i === 1 ? '#ffffff' : 'initial'"
+            >
+              {{ plan.name }}
+            </p>
+  
+            <!-- Plan Price and Plan Time with conditional colors -->
+            <p
+              class="plan-price poppins-medium text-center"
+              [ngStyle]="{ 'color': i === 1 ? '#92D590' : '#000' }"
+            >
+              {{ plan.price }}
+              <span
+                class="plantime text-muted"
+                [style.color]="i === 1 ? '#ffffff' : 'initial'"
+              >
+                {{ plan.time }}
+              </span>
+            </p>
+  
+            <p style="font-size: 18px;" class="poppins-bold text-center">Features and Benefits</p>
+            <p style="font-size: 14px; line-height: 20px;" class="poppins-regular text-center">{{ plan.tagline }}</p>
+            <hr class="w-100" />
+  
+            <!-- Feature List with conditional white color for central box -->
+            <ul>
+              <li
+                *ngFor="let feature of plan.features"
+                class="features-text tagline"
+                [ngStyle]="{ 'color': i === 1 ? '#ffffff' : 'initial' }"
+              >
+                <fa-icon class="iconbg" [icon]="faCheck"></fa-icon>
+                {{ feature }}
+              </li>
+            </ul>
+  
+            <!-- Get Started Button with background color #FFA8E1 and text color black -->
+            <div class="text-center">
+              <ng-template #popupContainer></ng-template>
+              <button
+                class="get-started poppins-regular py-2"
+                (click)="openPopup()"
+                [ngStyle]="{
+                  'background-color': i === 1 ? '#FFA8E1' : 'initial',
+                  'color': i === 1 ? '#000000' : 'initial'
+                }"
+              >
+                Get Started
+                <svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.00341 16.0372C8.76654 16.0372 8.57068 15.9598 8.41581 15.8048C8.26094 15.65 8.18351 15.4542 8.18351 15.2173C8.18351 14.9805 8.26094 14.7846 8.41581 14.6298C8.57068 14.4748 8.76654 14.3974 9.00341 14.3974H10.3699C10.2241 11.6827 9.2676 9.37325 7.50026 7.46927C5.73292 5.56528 3.59208 4.51307 1.07771 4.31266C0.840859 4.29444 0.644985 4.20789 0.490123 4.05301C0.33526 3.89815 0.257812 3.70229 0.257812 3.46542C0.257812 3.22857 0.339802 3.0327 0.503782 2.87783C0.667762 2.72296 0.859077 2.65464 1.07771 2.67286C3.37343 2.83684 5.42773 3.6203 7.24063 5.02323C9.05351 6.42618 10.3699 8.21172 11.1898 10.3799C11.7911 8.72189 12.6975 7.20508 13.9091 5.82947C15.1207 4.45386 16.5829 3.30144 18.2955 2.37222H14.7427C14.5058 2.37222 14.31 2.29479 14.1551 2.13993C14.0002 1.98505 13.9228 1.78919 13.9228 1.55232C13.9228 1.31547 14.0002 1.11961 14.1551 0.964732C14.31 0.809869 14.5058 0.732422 14.7427 0.732422H20.2087C20.4456 0.732422 20.6414 0.809869 20.7962 0.964732C20.9512 1.11961 21.0286 1.31547 21.0286 1.55232V7.01832C21.0286 7.25518 20.9512 7.45105 20.7962 7.60591C20.6414 7.76079 20.4456 7.83822 20.2087 7.83822C19.9719 7.83822 19.7759 7.76079 19.6211 7.60591C19.4662 7.45105 19.3888 7.25518 19.3888 7.01832V3.65674C17.1842 4.8046 15.4397 6.30773 14.1551 8.16618C12.8706 10.0246 12.1555 12.1017 12.0097 14.3974H13.3762C13.6131 14.3974 13.8089 14.4748 13.9638 14.6298C14.1187 14.7846 14.1961 14.9805 14.1961 15.2173C14.1961 15.4542 14.1187 15.65 13.9638 15.8048C13.8089 15.9598 13.6131 16.0372 13.3762 16.0372H9.00341Z" fill="#FFA8E1"/>
+                  </svg>
+                  
+                <!-- SVG icon -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

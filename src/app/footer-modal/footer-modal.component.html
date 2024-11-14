@@ -1,0 +1,25 @@
+<div class="bg">
+    <div class="text-end">
+<button type="button" class="btn " (click)="close()"><fa-icon class="crossicon" [icon]="faTimes"></fa-icon></button>
+
+    </div>
+    <div class="bg-padding">
+<p class="modal-title poppins-bold ms-2">{{ modalContent?.title }}</p>
+  <div class="modal-body poppins-regular text-white">
+    <p>{{ modalContent?.description }}</p>
+  
+    <!-- Display Images -->
+    
+  
+    <!-- Display List -->
+    <ul *ngIf="modalContent?.list?.length > 0"  style="color: #FBE07E; margin-left: -30px;">
+      <li *ngFor="let item of modalContent.list" class="poppins-medium"><fa-icon class="iconbg" [icon]="faCheck"></fa-icon> {{ item }}</li>
+    </ul>
+    <div class="text-center"><div *ngIf="modalContent?.images?.length > 0">
+      <div *ngFor="let image of modalContent.images" class="modal-image-container">
+        <img [src]="image" alt="Image" class="modal-image"/>
+      </div>
+    </div></div>
+  </div>
+</div>
+  </div>

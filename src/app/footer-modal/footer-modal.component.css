@@ -1,0 +1,28 @@
+.bg{
+    background-color: black;
+   
+
+}
+.bgpadding{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.modal-title{
+    font-size: 35px !important;
+    color: white;
+}
+ul li{
+    text-decoration: none !important;
+    list-style: none;
+}
+.iconbg{
+    background-color: #92D590;
+    padding: 3px 6px 3px 6px;
+  
+    line-height: 40px;
+    border-radius: 100%;
+    color: white;
+  }
+  .crossicon{
+    color: white !important;
+  }

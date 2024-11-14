@@ -1,0 +1,116 @@
+.contact{
+    background-color: #003333 !important;
+}
+.clr{
+    color: #F2C042 !important;
+}
+.desc{
+    color: black !important;
+}
+.text-class{
+    font-size: 4.375rem;
+    line-height: 78px;
+}
+.btnclr{
+    background-color: #FFA8E1;
+    font-size: 26px;
+    line-height: 26px;
+    color: #1E4C53;
+    border-radius: 30px;
+}
+.contact-head{
+    font-size: 3rem;
+    color: white;
+}
+.contact1{
+    border-radius: 0px 10px 10px 0px;
+}
+.contact2{
+    border-radius: 10px 0px 0px 10px;
+}
+.contact3{
+    border-radius: 10px 10px 0px 0px;
+}
+.contact4{
+    border-radius: 0px 0px 10px 10px;
+}
+.custom-width {
+    width: 30%; 
+    height: 200px;
+}
+.contact5{
+    border-radius: 10px 0px 0px 10px;
+}
+.outersection2{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:767px) {
+    .text-class{
+        font-size: 1.5rem !important;
+        line-height: 78px;
+    }
+    .btnclr{
+        background-color: #FFA8E1;
+        font-size: 15px !important;
+        line-height: 20px;
+        padding: 0px;
+        color: #1E4C53;
+        border-radius: 30px;
+    }
+    .desc{
+        color: black !important;
+        font-size: 11px !important;
+    }
+    .section1{
+        width: 100% !important;
+        padding-top: 0% !important;
+        padding-top: 20px !important;
+        padding: 5px 50px 5px 50px;
+        padding-bottom: 20px !important;
+    }
+    .contact1{
+       display: none;
+    }
+    .contact2{
+display: none;
+    }
+    .section2{
+        width: 100% !important;
+        padding-top: 0% !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .contact5{
+        border-radius: 0px 0px 10px 10px !important;
+        
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1189px) {
+    .text-class{
+        font-size: 2rem !important;
+        line-height: 30px;
+    }
+    .btnclr{
+        background-color: #FFA8E1;
+        font-size: 20px !important;
+        line-height: 20px;
+        color: #1E4C53;
+        border-radius: 30px;
+    }
+    .section1{
+        padding-top: 5% !important;
+    }
+}
+@media screen and (max-width:767px) {
+    .contact-head{
+        font-size: 2rem;
+        color: white;
+    }
+    .contact-text{
+        font-size: 11px;
+    }
+    .btn-center{
+        align-items: center;
+        text-align: center;
+    }
+}

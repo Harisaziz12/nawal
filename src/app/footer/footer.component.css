@@ -1,0 +1,123 @@
+/* Footer styles */
+.footrmain {
+  background-color: #003333;
+}
+
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+/* Modal Body Styles */
+.modal-body pre {
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 70vh; /* Ensure content fits in a scrollable area */
+}
+
+/* Footer Links Styles */
+.footer-links {
+  text-decoration: none !important;
+  font-size: 20px;
+  line-height: 30px;
+  list-style: none;
+  padding: 0;
+  color: white !important;
+}
+
+.footer-links .footer-item {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.footer-links .footer-title {
+  font-weight: bold;
+  color: #92D590;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+  font-size: 16px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+/* Modal Content Styles */
+.modal-content {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  max-height: 85vh;
+  overflow-y: auto !important; /* Enable vertical scroll */
+  overflow-x: hidden !important; /* Disable horizontal scroll */
+  word-wrap: break-word; /* Ensure long words break to fit content */
+  background: #fff; /* Ensure proper background for content */
+}
+/* Target the modal content */
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #1D5A60; /* Color of the scrollbar thumb */
+  border-radius: 10px;       /* Rounding the corners */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+svg {
+  margin: 10px !important;
+}
+
+/* Modal Header Styles */
+.modal-header {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* Modal Body General Styles */
+.modal-body {
+  font-size: 14px;
+  line-height: 1.5;
+  padding-right: 10px; /* Add padding to avoid overflow on the right */
+}
+
+/* Modal Dialog Styles */
+.modal-dialog {
+  max-width: 90% !important;
+  padding-left: 10%;
+  margin: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll in the dialog */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Close Button Styles */
+.btn-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  line-height: 1;
+}
+.text-clas{
+  font-size: 12px;
+  color: black;
+}
+.icon{
+  font-size: 20px !important;
+  color: #98a2b3;
+}
+@media screen and (max-width:767px) {
+  .icon{
+    font-size: 15px !important;
+    padding-left: 0px !important;
+    color: #98a2b3;
+  }
+}

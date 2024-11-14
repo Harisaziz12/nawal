@@ -1,0 +1,59 @@
+.navbar{
+    background-color: #063B3C;
+    border-radius: 30px;
+}
+.nav-link{
+    font-size: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    color: white !important;
+    line-height: 24px !important;
+}
+.btn1{
+    width: 130px;
+    background-color: #CBEEE2;
+    font-size: 16px;
+    color: #003333;
+    border-radius: 30px !important;
+}
+.btn2{
+    width: 130px;
+    background-color: #003333;
+    font-size: 16px;
+    color: #70EE91;
+    border-radius: 30px !important;
+}
+.btn3{
+    width: 120px !important;
+    background-color: #003333;
+    font-size: 14px;
+    color: #70EE91;
+    margin-left: 30px !important;
+    border-radius: 30px !important;
+}
+.logo-img{
+    height: 39px;
+    width: 123px;
+}
+
+@media screen and (max-width:550px) {
+    .logo-img{
+        height: 29px !important;
+        width: 90px !important;
+    }
+    .navbar{
+        background-color: #063B3C;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .btn2{
+        width: 133px;
+        background-color: #003333;
+        font-size: 13px;
+        color: #70EE91;
+        border-radius: 30px !important;
+    }
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath fill='none' stroke='%23ffffff' stroke-width='2' d='M5 7h20M5 15h20M5 23h20'/%3E%3C/svg%3E");
+}

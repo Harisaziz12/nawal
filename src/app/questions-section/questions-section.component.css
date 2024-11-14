@@ -1,0 +1,136 @@
+.main{
+  overflow-x: hidden !important;
+}
+.row {
+  margin-bottom: 0.5rem;  /* Add space between sections */
+}
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-top: 10px;  /* Increased spacing between items */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: none !important; 
+  border: 0px !important;
+}
+
+.accordion-header {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent; /* No background by default */
+  box-shadow: none; /* Ensure no box-shadow is applied to the header */
+}
+
+.accordion-header:hover {
+  background-color: #f1f1f1; /* Add subtle hover effect */
+}
+
+.accordion-header.first-item {
+  background-color: #f1f1f1;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  background-color: transparent; 
+  font-size:16px;
+  line-height: 24px;
+  border: 0px !important;
+  box-shadow: none !important;
+}
+.accordion-content.open {
+  display: block;
+  border: 0px !important;
+  box-shadow: none !important;
+}
+
+.accordion-content.first-item {
+  background-color: #f9f9f9; /* Light background for first item content */
+}
+
+.accordion-icon {
+  font-size: 20px;
+  color: #33333393;
+  transition: transform 0.3s;
+  border: 1px solid #333333ab;
+  padding: 3px 8px 2px 8px;
+  border-radius: 100%;
+  color: #333333ab;
+}
+
+.accordion-icon.open {
+  transform: rotate(0deg);
+}
+
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+.supportsection{
+  font-size: 16px;
+  color: #6941C6;
+  margin-top: 2rem;
+}
+.faqhead{
+  font-size: 48px;
+  line-height: 48px;
+}
+.faqtext{
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 2rem;
+}
+.head{
+  font-size: 64px;
+  line-height: 40px;
+  color: #FFA8E1 !important;
+
+}
+.btnstyle{
+  width: 352px;
+  font-size: 26px;
+  color: white;
+  background-color: #6941c600;
+  outline: none;
+  border-radius: 40px;
+  border: 1px solid white !important;
+}
+@media screen and (max-width:767px) {
+  .head{
+    font-size: 2rem;
+  }
+
+  .txt{
+    font-size: 11px;
+  }
+  .btnstyle{
+    width: 200px;
+    font-size: 15px;
+    color: white;
+    background-color: #6941c600;
+    outline: none;
+    border-radius: 40px;
+    border: 1px solid white !important;
+  }
+  .faqhead{
+    font-size: 2rem;
+    line-height: 48px;
+  }
+  .accordion-icon {
+    font-size: 20px;
+    color: #333;
+    transition: transform 0.3s;
+    border: 2px solid #3333339c;
+    padding: 3px 12px 2px 8px;
+    border-radius: 100%;
+    color: #3333339c;
+  }
+}

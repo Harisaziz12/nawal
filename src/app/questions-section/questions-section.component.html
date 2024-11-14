@@ -1,0 +1,159 @@
+<div class="container-fluid main p-0 px-5 py-5 my-5">
+  <div class="row">
+    <div class="col-md-6">
+      <p class="poppins-semibold supportsection">Support</p>
+      <p class="faqhead poppins-extrabold">Nevly Money Service:</p>
+      <p class="poppins-medium faqtext">Everything you need to know about the product and billing. Can’t find the answer
+        you’re looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let item of accordionItems; let i = index">
+          <div class="accordion-header poppins-bold" (click)="toggleAccordion(i, accordionItems)">
+            {{ item.title }}
+            <span class="accordion-icon" [class.open]="item.isOpen">
+              {{ item.isOpen ? '-' : '+' }}
+            </span>
+          </div>
+          <div class="accordion-content poppins-regular" [class.open]="item.isOpen">
+            {{ item.content }}
+            <!-- Check if item.list exists and display each item in the list -->
+            <ul *ngIf="item.list">
+              <li *ngFor="let listItem of item.list">{{ listItem }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="poppins-semibold supportsection">Support</p>
+      <p class="faqhead poppins-extrabold">Pathway Card:</p>
+      <p class="poppins-medium faqtext">Everything you need to know about the product and billing. Can’t find the answer
+        you’re looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let item1 of accordionItems1; let i = index">
+          <div class="accordion-header poppins-bold" (click)="toggleAccordion(i, accordionItems1)">
+            {{ item1.title }}
+            <span class="accordion-icon" [class.open]="item1.isOpen">
+              {{ item1.isOpen ? '-' : '+' }}
+            </span>
+          </div>
+          <div class="accordion-content poppins-regular" [class.open]="item1.isOpen">
+            {{ item1.content }}
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="poppins-semibold supportsection">Support</p>
+      <p class="faqhead poppins-extrabold">Rent Advances:</p>
+      <p class="poppins-medium faqtext">Everything you need to know about the product and billing. Can’t find the answer
+        you’re looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let item2 of accordionItems2; let i = index">
+          <div class="accordion-header poppins-bold" (click)="toggleAccordion(i, accordionItems2)">
+            {{ item2.title }}
+            <span class="accordion-icon" [class.open]="item2.isOpen">
+              {{ item2.isOpen ? '-' : '+' }}
+            </span>
+          </div>
+          <div class="accordion-content poppins-regular" [class.open]="item2.isOpen">
+            {{ item2.content }}
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="poppins-semibold supportsection">Support</p>
+      <p class="faqhead poppins-extrabold">Rent Reporting:</p>
+      <p class="poppins-medium faqtext">Everything you need to know about the product and billing. Can’t find the answer
+        you’re looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let item3 of accordionItems3; let i = index">
+          <div class="accordion-header poppins-bold" (click)="toggleAccordion(i, accordionItems3)">
+            {{ item3.title }}
+            <span class="accordion-icon" [class.open]="item3.isOpen">
+              {{ item3.isOpen ? '-' : '+' }}
+            </span>
+          </div>
+          <div class="accordion-content poppins-regular" [class.open]="item3.isOpen">
+            {{ item3.content }}
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="poppins-semibold supportsection">Support</p>
+      <p class="faqhead poppins-extrabold">Report Auditing Services:</p>
+      <p class="poppins-medium faqtext">Everything you need to know about the product and billing. Can’t find the answer
+        you’re looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let item4 of accordionItems4; let i = index">
+          <div class="accordion-header poppins-bold" (click)="toggleAccordion(i, accordionItems4)">
+            {{ item4.title }}
+            <span class="accordion-icon" [class.open]="item4.isOpen">
+              {{ item4.isOpen ? '-' : '+' }}
+            </span>
+          </div>
+          <div class="accordion-content poppins-regular" [class.open]="item4.isOpen">
+            {{ item4.content }}
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p class="poppins-semibold supportsection">Support</p>
+      <p class="faqhead poppins-extrabold">Referral Program:</p>
+      <p class="poppins-medium faqtext">Everything you need to know about the product and billing. Can’t find the answer
+        you’re looking for? Please chat to our friendly team.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="accordion">
+        <div class="accordion-item" *ngFor="let item5 of accordionItems5; let i = index">
+          <div class="accordion-header poppins-bold" (click)="toggleAccordion(i, accordionItems5)">
+            {{ item5.title }}
+            <span class="accordion-icon" [class.open]="item5.isOpen">
+              {{ item5.isOpen ? '-' : '+' }}
+            </span>
+          </div>
+          <div class="accordion-content poppins-regular" [class.open]="item5.isOpen">
+            {{ item5.content }}
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid px-5  py-4 my-5">
+  <div class="py-5 rounded-5" style="background-color: #1E4C53;">
+    <p class="head poppins-bold text-center text-white">Still have questions?</p>
+    <p class="txt text-center poppins-regular text-white my-4 pt-2">If there are still questions that our FAQs haven't answered, reach out to us and we ensure <br> that you get the information you need.</p>
+    <div class="text-center">
+      <button class="btnstyle py-3" routerLink="/contact">CONTACT SUPPORT</button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,41 @@
+.loginhead{
+    font-size: 4rem !important;
+}
+.loginpadding{
+    padding-left: 80px !important;
+    padding-right: 60px !important;
+}
+.login-text{
+    font-size: 15px !important;
+}
+.btn{
+    width: 100%;
+}
+.cbtn{
+    background-color: #1D5A60;
+    border-radius: 30px;
+}
+.cbtn2{
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+.cbtn3{
+    background-color: #d9d9d900;
+    border:1px solid black;
+    border-radius: 30px;
+
+}
+.qrhead{
+    font-size: 30px;
+    line-height: 40px;
+}
+.qrhead2{
+    font-size: 20px;
+    color: white;
+    line-height: 40px;
+}
+@media screen and (max-width:767px) {
+    .loginhead{
+        font-size: 2.5rem !important;
+    }
+}

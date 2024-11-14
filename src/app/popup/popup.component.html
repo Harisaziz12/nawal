@@ -1,0 +1,33 @@
+<div class="modal-overlay" (click)="close()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-button" (click)="close()">×</button>
+    <p class="fs-1 head poppins-bold px-5 text-center">
+      GET THE <span class="clr">NEVLY MONEY</span> APP
+    </p>
+    <p class="text-center poppins-medium scantext" style="font-size: 15px;">
+      Scan the QR code to download the app
+    </p>
+    <div class="text-center">
+      <img src="images/qrcode.png" height="200px" width="200px" alt="">
+      <p class="poppins-medium scantext">Or get a download link via SMS</p>
+    </div>
+    <div class="row justify-content-center" style="margin-left: 5%; width: 90%;">
+      <!-- Country Code Dropdown -->
+      <div class="col-3 px-0 flag-div">
+        <div class="flag">
+          <img src="images/flag.png" class="img-fluid" alt="" width="32">  &nbsp;
+          +1
+        </div>
+      </div>
+      <!-- Phone Number Input -->
+      <div class="col-6 px-0">
+        <div class="input-group input-group-sm  mx-0">
+          <input type="text" class="form-control mob" placeholder="Mobile No"  aria-describedby="inputGroup-sizing-sm">
+        </div>
+      </div>
+      <div class="col-2 pt-2">
+        <fa-icon class="iconbg" [icon]="faArrowRight"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>

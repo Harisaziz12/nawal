@@ -1,0 +1,69 @@
+<div class="containerfluid p-0  bgimg">
+  <div class="container-fluid p-0 bgclr">
+    <!-- your-component.component.html -->
+    <div class="menu">
+      <div class="innermanue">
+        <!-- your-component.component.html -->
+        <div class="menu">
+          <div class="innermanue">
+            <div class="scroll-text-wrapper text-center">
+              <div class="scroll-text text-center">
+
+                <span class="text-item">CASH ADVANCES</span>
+                <span class="dot">•</span>
+                <span class="text-item">REAL TIME CREDIT MONITORING</span>
+                <span class="dot">•</span>
+                <span class="text-item">RENT REPORTING</span>
+                <span class="dot">•</span>
+                <span class="text-item">24/7 CUSTOMER SUPPORT</span>
+                <span class="dot">•</span>
+                <span class="text-item">CREDIT BUILDER SERVICES</span>
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <p class="text-center head mt-5 poppins-bold">HOW NEVLY MONEY WORKS</p>
+    <p class="desc poppins-regular text-center">Nevly Money was designed for members to use as many of its services as
+      possible at the same time. <br>
+      This approach can result in a higher increase in credit score over a shorter period of time</p>
+    <div class="text-center">
+      <ng-template #popupContainer></ng-template>
+
+      <button class="btn btnjoin1" (click)="openPopup()">JOIN NOW
+        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.5034 21.0372C11.2665 21.0372 11.0707 20.9598 10.9158 20.8048C10.7609 20.65 10.6835 20.4542 10.6835 20.2173C10.6835 19.9805 10.7609 19.7846 10.9158 19.6298C11.0707 19.4748 11.2665 19.3974 11.5034 19.3974H12.8699C12.7241 16.6827 11.7676 14.3733 10.0003 12.4693C8.23292 10.5653 6.09208 9.51307 3.57771 9.31266C3.34086 9.29444 3.14499 9.20789 2.99012 9.05301C2.83526 8.89815 2.75781 8.70229 2.75781 8.46542C2.75781 8.22857 2.8398 8.0327 3.00378 7.87783C3.16776 7.72296 3.35908 7.65464 3.57771 7.67286C5.87343 7.83684 7.92773 8.6203 9.74063 10.0232C11.5535 11.4262 12.8699 13.2117 13.6898 15.3799C14.2911 13.7219 15.1975 12.2051 16.4091 10.8295C17.6207 9.45386 19.0829 8.30144 20.7955 7.37222H17.2427C17.0058 7.37222 16.81 7.29479 16.6551 7.13993C16.5002 6.98505 16.4228 6.78919 16.4228 6.55232C16.4228 6.31547 16.5002 6.11961 16.6551 5.96473C16.81 5.80987 17.0058 5.73242 17.2427 5.73242H22.7087C22.9456 5.73242 23.1414 5.80987 23.2962 5.96473C23.4512 6.11961 23.5286 6.31547 23.5286 6.55232V12.0183C23.5286 12.2552 23.4512 12.4511 23.2962 12.6059C23.1414 12.7608 22.9456 12.8382 22.7087 12.8382C22.4719 12.8382 22.2759 12.7608 22.1211 12.6059C21.9662 12.4511 21.8888 12.2552 21.8888 12.0183V8.65674C19.6842 9.8046 17.9397 11.3077 16.6551 13.1662C15.3706 15.0246 14.6555 17.1017 14.5097 19.3974H15.8762C16.1131 19.3974 16.3089 19.4748 16.4638 19.6298C16.6187 19.7846 16.6961 19.9805 16.6961 20.2173C16.6961 20.4542 16.6187 20.65 16.4638 20.8048C16.3089 20.9598 16.1131 21.0372 15.8762 21.0372H11.5034Z"
+            fill="#1E4C53" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="container my-5 py-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 " *ngFor="let card of cards">
+          <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+              <div class="outerdiv text-center">
+                <p class="card-title" style="font-size: 38px; background-color: #003333;">{{ card.number }}</p>
+              </div>
+              <p class="card-title poppins-bold pt-5" style="font-size: 18px;">{{ card.title }}</p>
+              <p class="card-text poppins-regular" style="font-size: 14px;">{{ card.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

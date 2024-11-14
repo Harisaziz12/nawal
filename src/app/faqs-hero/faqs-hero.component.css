@@ -1,0 +1,22 @@
+.faq-hero{
+    overflow-x: hidden;
+}
+.navbar-hero{
+    position: absolute;
+    width: 100% !important;
+    top: 40px !important;
+}
+
+.text-cls{
+    font-size: 35px;
+}
+.desc{
+    font-size: 15px !important;
+}
+@media screen and (max-width:726px) {
+    .navbar-hero{
+        position: relative;
+        width: 100% !important;
+        top: 0px !important;
+    }
+}

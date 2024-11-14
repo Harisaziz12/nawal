@@ -1,0 +1,114 @@
+.bgimg{
+    background-image: url('../../../public/images/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgclr{
+    background-color: rgba(0, 0, 0, 0.699);
+}
+.head{
+    font-size: 4rem;
+    color: white;
+}
+.menu {
+    background-image: url('../../../public/images/sky.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innermanue {
+    background-color: rgba(0, 0, 0, 0.438);
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    padding-top:20px;
+    height: 70px;
+}
+
+.scroll-text-wrapper {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+}
+
+.scroll-text {
+    display: flex;
+    gap: 10px;
+    margin-left: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFC107; /* Adjust to match text color */
+    white-space: nowrap;
+}
+
+/* Static text style for larger screens */
+@media (min-width: 768px) {
+    .scroll-text {
+        animation: none;
+    }
+}
+
+/* Sliding effect for small screens */
+@media (max-width: 767px) {
+    .scroll-text {
+        animation: scroll 10s linear infinite;
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.dot {
+    color: #FF69B4; 
+    font-size: 20px;/* Adjust to match dot color */
+}
+
+.desc{
+    line-height: 20px !important;
+}
+.card{
+    height: 300px;
+    position: relative;
+}
+.outerdiv{
+    position: absolute;
+    width: 60px;
+    border-radius: 100% !important;
+    color: white;
+    top: -30px;
+    left: 40%;
+}
+.outerdiv p{
+    border-radius: 100% !important;
+    
+}
+
+@media screen and (max-width:767px) {
+    .head{
+        font-size: 1.5rem !important;
+        color: white;
+    }
+    .desc{
+        font-size: 11px !important;
+        padding-left: 20px;
+        line-height: 20px !important;
+        padding-right: 20px;
+    }
+    .btnjoin1{
+        font-size: 15px !important;
+        padding: 0;
+        padding: 5px;
+    }
+}
