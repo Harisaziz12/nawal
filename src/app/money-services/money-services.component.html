@@ -22,13 +22,13 @@
     
 
       <div class="col-12">
-        <div class="carousel-container">
+        <div class="carousel-container" >
           <div class="carousel-wrapper" [style.transform]="getTransform()">
             <div class="carousel-card" *ngFor="let card of cards">
               <div class="card mb-4 px-2 mx-auto" (click)="openModal(content, card)">
-                <div class="card-body text-center">
-                  <h5 class="card-title poppins-bold mb-3 text-white mt-2">{{ card.title }}</h5>
-                  <img [src]="card.imageUrl" class="card-img-top img-fluid my-3" alt="{{ card.title }}">
+                <div class="card-body text-center ">
+                  <h5 class="card-title poppins-bold px-xxl-5 mb-3 text-white mt-2">{{ card.title }}</h5>
+                  <img [src]="card.imageUrl" class="card-img-top img-fluid my-3 " alt="{{ card.title }}">
                   <div class="my-2 text-end">
                     <svg width="25" height="16" class="arrow" viewBox="0 0 25 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">

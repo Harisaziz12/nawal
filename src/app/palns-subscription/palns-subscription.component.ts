@@ -1,7 +1,9 @@
+// palns-subscription.component.ts
 import { Component, OnInit } from '@angular/core';
-import { ViewChild, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
+import { ViewChild, ViewContainerRef } from '@angular/core';
 import { PopupComponent } from '../popup/popup.component';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-palns-subscription',
   templateUrl: './palns-subscription.component.html',
@@ -12,12 +14,13 @@ export class PalnsSubscriptionComponent implements OnInit {
   @ViewChild('popupContainer', { read: ViewContainerRef }) popupContainer!: ViewContainerRef;
 
   openPopup() {
-    this.popupContainer.clear(); // Clear any existing popup instances
+    this.popupContainer.clear();
     const popupRef = this.popupContainer.createComponent(PopupComponent);
     popupRef.instance.closePopup.subscribe(() => {
-      popupRef.destroy(); // Destroy the popup when closing
+      popupRef.destroy();
     });
   }
+
   plans = [
     {
       name: 'Newly Starter',
@@ -34,6 +37,7 @@ export class PalnsSubscriptionComponent implements OnInit {
       name: 'Newly Lite',
       price: '$49.99',
       time: '/PER MONTH',
+      timeColor: 'white', // Use a valid color name or hex code here
       tagline: 'Ready to improve your credit score and get help managing your cash flow issues with an interest-free option, this is the plan for you',
       features: [
         'Three bureau credit reports and scores updated monthly',
@@ -59,10 +63,5 @@ export class PalnsSubscriptionComponent implements OnInit {
 
   ngOnInit() {
     console.log(this.plans); 
-  }
-
-  // Function to prepend checkmark icon to features
-  getFeatureWithIcon(feature: string): string {
-    return `<i class="fa-solid fa-check" style="color: white;"></i> ${feature}`;
   }
 }

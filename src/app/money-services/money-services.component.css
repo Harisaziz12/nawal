@@ -138,7 +138,7 @@ ul li {
   }
 
   .card-title {
-    font-size: 3.5rem !important;
+    font-size: 012rem !important;
   }
 }
 
@@ -290,6 +290,38 @@ ul li {
 .dots-container .dot:nth-child(8) {
   position: relative;
 }
+/* Target only 1940px width screens */
+@media only screen and (width: 1940px) {
+  /* Apply fixed pixel values here to match the exact design in Frame 185.png */
+
+  .container {
+    width: 1920px !important;  /* Exact width as required */
+    margin: 0 auto; /* Center the container */
+    display: block; /* Prevent any flex/grid responsiveness */
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  /* Example for inner elements to exactly match the image */
+  .content {
+    width: 33% !important;   /* Exact inner width */
+    font-size: 16px; /* Fixed font size */
+    padding: 50px;   /* Exact padding */
+    /* Add any more exact styling here */
+  }
+  .card{
+    width: 80% !important;
+  }
+  .head {
+    font-size: 3.5rem;
+    color: black !important;
+  }
+  .card-title{
+    font-size: 2rem !important;
+  }
+
+  /* You can continue applying pixel-specific dimensions to other elements */
+}
+
 
 /* Adjust for smaller screen sizes */
 @media (max-width: 768px) {

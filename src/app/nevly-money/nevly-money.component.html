@@ -1,35 +1,23 @@
 <div class="containerfluid p-0  bgimg">
   <div class="container-fluid p-0 bgclr">
     <!-- your-component.component.html -->
-    <div class="menu">
-      <div class="innermanue">
-        <!-- your-component.component.html -->
-        <div class="menu">
-          <div class="innermanue">
-            <div class="scroll-text-wrapper text-center">
-              <div class="scroll-text text-center">
-
-                <span class="text-item">CASH ADVANCES</span>
-                <span class="dot">•</span>
-                <span class="text-item">REAL TIME CREDIT MONITORING</span>
-                <span class="dot">•</span>
-                <span class="text-item">RENT REPORTING</span>
-                <span class="dot">•</span>
-                <span class="text-item">24/7 CUSTOMER SUPPORT</span>
-                <span class="dot">•</span>
-                <span class="text-item">CREDIT BUILDER SERVICES</span>
-
-              </div>
-
-
-            </div>
-
-          </div>
+    <div class="text-slider align-items-center">
+      <div class="bg1 align-items-center">
+        <div class="slider-content align-items-center">
+          <span *ngFor="let item of items; let last = last" class="slider-item">
+            {{ item }}
+            <span *ngIf="!last" class="dot">&#x2022;</span>
+          </span>
+          <span *ngFor="let item of items; let last = last" class="slider-item d-md-none d-sm-block">
+            {{ item }}
+            <span *ngIf="!last" class="dot">&#x2022;</span> <!-- Duplicate for small screens -->
+          </span>
         </div>
-
-
       </div>
     </div>
+    
+    
+    
 
 
     <p class="text-center head mt-5 poppins-bold">HOW NEVLY MONEY WORKS</p>

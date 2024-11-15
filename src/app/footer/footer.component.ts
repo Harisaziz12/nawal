@@ -114,7 +114,7 @@ export class FooterComponent {
   }
   footerItems = [
     { title: 'NEVLY' },
-    { name: 'HOW NEVLY MONEY WORKS', link: '/faqs' },
+    { name: 'FAQS', link: '/faqs' },
     { name: 'CONTACT', link: '/contact' },
   ];
 

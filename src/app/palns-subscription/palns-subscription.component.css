@@ -88,11 +88,19 @@
     left: 9%;
   }
   
+  .central-button {
+    background-color: #FFA8E1 !important;
+    color: black !important;
+  }
+  .central-svg {
+    color: black;
+  }
+  
   
   
  
   .features-text{
-    line-height: 30px !important;
+    line-height: 25px !important;
   }
   .iconbg{
     background-color: #92d590 !important;

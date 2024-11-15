@@ -4,16 +4,24 @@
 <div class="container-fluid p-0 overflow-hidden">
     <div class="row">
         <div class="col-md-6 loginpadding  my-md-5">
-            <p class="loginhead poppins-bold">Welome back</p>
+            <p class="loginhead poppins-bold">Welcome back</p>
             <p class="login-text poppins-regular">Enter the phone number associated with your account</p>
             <form action="">
-                <div class="form-group">
-                    <input type="email" class="form-control py-3" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
+                <div class="form-group position-relative">
+                    <input type="email" class="form-control py-3 pl-5 pr-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                
+                    <!-- Lock icon on the left side -->
+                    <fa-icon [icon]="'lock'" class="position-absolute" style="right: 50px; top: 50%; transform: translateY(-50%); color: #888;"></fa-icon>
+                
+                    <!-- Info icon on the right side -->
+                    <fa-icon [icon]="'info-circle'" class="position-absolute" style="right: 20px; top: 50%; transform: translateY(-50%); cursor: pointer; color: rgb(100, 100, 100);" title="Unlock 1Password"></fa-icon>
                 </div>
+                
                 <p class="py-3 ">Lost access to my email</p>
                 <button class="btn cbtn poppins-regular text-white py-3">Continue</button>
-                <p class="my-3">or</p>
+                <div class="text-divider my-3">
+                    <span>or</span>
+                </div>
                 <button class="btn cbtn2 poppins-regular  py-3 my-2" routerLink="/phone-login">Continue with
                     Phone</button>
                 <button class="btn cbtn2 poppins-regular  py-3 my-2"><svg width="25" height="24" viewBox="0 0 25 24"

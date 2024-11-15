@@ -16,6 +16,13 @@ export class NevlyMoneyComponent {
       popupRef.destroy(); // Destroy the popup when closing
     });
   }
+  items = [
+    'CASH ADVANCES',
+    'REAL TIME CREDIT MONITORING',
+    'RENT REPORTING',
+    '24/7 CUSTOMER SUPPORT',
+    'CREDIT BUILDER SERVICES'
+  ];
   cards = [
     {
       number:'1',

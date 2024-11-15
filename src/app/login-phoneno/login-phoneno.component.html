@@ -1,19 +1,33 @@
-<div class="d-sm-block d-md-none">
-    <app-navbar></app-navbar>
+<div class="container-fluid maindiv px-0">
+<div class=" px-0">
+   <app-navbar class="navbar-hero"></app-navbar>
 </div>
 <div class="container-fluid p-0 overflow-hidden">
     <div class="row">
         <div class="col-md-6 loginpadding  my-md-5">
-            <p class="loginhead poppins-bold">Welome back</p>
+            <p class="loginhead poppins-bold mt-5">Welcome back</p>
             <p class="login-text poppins-regular">Enter the phone number associated with your account</p>
             <form action="">
-                <div class="form-group">
-                    <input type="email" class="form-control py-3" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Enter email">
+                <div class="row">
+                    <div class="col-3 mx-2 flag-div text-center d-flex justify-content-center align-items-center">
+                        <div class="flag">
+                          <img src="images/flag.png" class="img-fluid" alt="" width="32"> &nbsp;
+                          +1
+                        </div>
+                      </div>
+                      <!-- Phone Number Input -->
+                      <div class="col-8 px-0">
+                        <div class="input-group input-group-sm  mx-0">
+                          <input type="text" class="form-control mob" placeholder="Mobile No"  aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                      </div>
                 </div>
                 <p class="py-3 ">Lost access to my  phone</p>
                 <button class="btn cbtn poppins-regular text-white py-3">Continue</button>
-                <p class="my-3">or</p>
+                <div class="text-divider my-3">
+                    <span>or</span>
+                </div>
+                
                 <button class="btn cbtn2 poppins-regular  py-3 my-2" routerLink="/login">Continue with
                     email</button>
                 <button class="btn cbtn2 poppins-regular  py-3 my-2"><svg width="25" height="24" viewBox="0 0 25 24"
@@ -85,3 +99,4 @@
 
 
 <ng-template #popupContainer></ng-template>
+</div>

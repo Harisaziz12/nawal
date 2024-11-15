@@ -34,7 +34,8 @@
 .scroll-text-wrapper {
     display: flex;
     overflow: hidden;
-    text-align: center;
+    text-align: center !important;
+    justify-content: center;
 }
 
 .scroll-text {
@@ -110,5 +111,60 @@
         font-size: 15px !important;
         padding: 0;
         padding: 5px;
+    }
+}
+.text-slider {
+    background-image: url('../../../public//images//sky.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #1a1a1a; /* Adjust background as needed */
+}
+
+.bg1 {
+    background-color: rgba(3, 3, 3, 0.288);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-content {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: none; /* Default: no scrolling */
+}
+
+/* Styling for slider items */
+.slider-item {
+    display: inline-block;
+    font-size: 1em;
+    color: #f6d25a;
+}
+
+.dot {
+    color: #FFA8E1; /* Adjust text color as needed */
+    font-size: 20px;
+    padding: 10px 20px 10px 20px !important;
+    margin-top: 150px !important;
+}
+
+/* Add animation for small screens */
+@media screen and (max-width: 768px) {
+    .slider-content {
+        animation: scroll 15s linear infinite;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }

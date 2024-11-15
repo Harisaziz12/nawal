@@ -34,8 +34,53 @@
     color: white;
     line-height: 40px;
 }
+.form-group {
+    position: relative;
+}
+
+.lock-icon i,
+.info-icon i {
+    font-size: 18px; /* Adjust size as needed */
+    color: #6c757d; /* Adjust color as needed */
+}
+
+.lock-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
 @media screen and (max-width:767px) {
     .loginhead{
         font-size: 2.5rem !important;
     }
+}
+.text-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0; /* Adjust spacing as needed */
+}
+
+.text-divider::before,
+.text-divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc; /* Adjust line color as needed */
+    margin: 0 10px; /* Adjust spacing between "or" and lines */
+}
+
+.text-divider span {
+    font-size: 16px; /* Adjust text size as needed */
+    color: #6c757d; /* Adjust text color as needed */
 }

@@ -3,8 +3,9 @@
     <div class="row">
       <div class="col-12 col-md-3 px-4">
         <ul class="footer-links">
+          <img src="images/nev.png" width="70px" alt="">
           <li *ngFor="let item of footerItems">
-            <a *ngIf="!item.link" href="javascript:void(0)" class="footer-title">{{ item.title }}</a>
+          
             <a *ngIf="item.link" [routerLink]="item.link" class="footer-item poppins-regular">{{ item.name }}</a>
           </li>
         </ul>

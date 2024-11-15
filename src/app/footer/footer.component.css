@@ -34,6 +34,7 @@ footer {
   text-decoration: none;
   margin: 5px 0;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .footer-links .footer-title {

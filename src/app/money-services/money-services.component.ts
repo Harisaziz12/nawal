@@ -156,7 +156,11 @@ export class MoneyServicesComponent {
       this.itemsPerSlide = 1; // Show 1 card per slide on very small screens
     } else if (this.innerWidth <= 768) {
       this.itemsPerSlide = 2; // Show 2 cards per slide on smaller screens (tablets)
-    } else {
+    }
+    else if(this.innerWidth<=1940){
+      this.itemsPerSlide = 3; 
+    }
+     else {
       this.itemsPerSlide = 3; // Show 3 cards per slide on larger screens
     }
     this.dots = Array(Math.ceil(this.cards.length / this.itemsPerSlide)).fill(0);  // Update the dots
